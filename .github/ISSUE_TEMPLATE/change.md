@@ -2,9 +2,12 @@
 name: "Change request"
 about: "機能追加、改善、リファクタリング、Docs、CI、Choreに使う"
 title: "[change] "
+labels: ["change"]
 ---
 
 <!--
+このIssue全体には P0 / P1 / P2 のいずれか1つのlabelを付ける。
+
 列挙項目に優先順位がある場合:
 🔴 必須・重大
 🟡 重要・要判断

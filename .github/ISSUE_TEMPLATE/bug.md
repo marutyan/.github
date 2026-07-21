@@ -2,9 +2,12 @@
 name: "Bug report"
 about: "既存の挙動が想定と異なる場合に使う"
 title: "[bug] "
+labels: ["bug"]
 ---
 
 <!--
+このIssue全体には P0 / P1 / P2 のいずれか1つのlabelを付ける。
+
 列挙項目に優先順位がある場合:
 🔴 必須・重大
 🟡 重要・要判断

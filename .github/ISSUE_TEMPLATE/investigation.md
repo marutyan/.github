@@ -2,9 +2,12 @@
 name: "Investigation"
 about: "原因、影響範囲、実装方針などを調査する場合に使う"
 title: "[investigation] "
+labels: ["investigation"]
 ---
 
 <!--
+このIssue全体には P0 / P1 / P2 のいずれか1つのlabelを付ける。
+
 列挙項目に優先順位がある場合:
 🔴 必須・重大
 🟡 重要・要判断
