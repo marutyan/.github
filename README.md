@@ -18,8 +18,18 @@
 
 ## 適用優先順位
 
-1. 対象リポジトリ固有のIssue Template、Issue Form、またはPR Template。
-2. 対象リポジトリに該当テンプレートがない場合、このリポジトリのmerge済みテンプレート。
+### Issue
+
+1. 対象リポジトリにIssue TemplateまたはIssue Formが一つでもある場合、そのリポジトリ固有のtemplate set。
+2. 対象リポジトリにIssue TemplateもIssue Formもない場合、このリポジトリのmerge済みtemplate set。
+3. GitHub上で適用されるtemplate setを取得できない、または選択肢に必要な形式がない場合のみ、AI実行手順が定める最小fallback。
+
+GitHubは対象リポジトリにIssue template setがあると、このリポジトリのdefault Issue templatesを個別種類ごとには補完しない。例えば対象側にChangeだけがありBugがない場合、共通Bug templateを混在させず最小fallbackを使う。
+
+### Pull Request
+
+1. 対象リポジトリ固有のPR Template。
+2. 対象リポジトリにPR Templateがない場合、このリポジトリのmerge済みPR Template。
 3. どちらも取得できない場合のみ、AI実行手順が定める最小fallback。
 
 対象リポジトリ固有の形式を、このリポジトリの共通形式で上書きしない。
