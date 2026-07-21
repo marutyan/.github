@@ -2,9 +2,12 @@
 name: "Experiment"
 about: "実験、比較、アブレーションを計画する場合に使う"
 title: "[experiment] "
+labels: ["experiment"]
 ---
 
 <!--
+このIssue全体には P0 / P1 / P2 のいずれか1つのlabelを付ける。
+
 列挙項目に優先順位がある場合:
 🔴 必須・重大
 🟡 重要・要判断
