@@ -34,6 +34,16 @@ GitHubは対象リポジトリにIssue template setがあると、このリポ�
 
 対象リポジトリ固有の形式を、このリポジトリの共通形式で上書きしない。
 
+## Badge labels
+
+- Issue・PR全体の優先度は`P0`、`P1`、`P2`のいずれか1つで示す。
+- Issue種別は`bug`、`change`、`investigation`、`experiment`で示す。
+- 本文中の個別項目は`🔴🟡🟢⚪`でtriageし、GitHub labelとは区別する。
+
+default community health repositoryのlabel実体は対象リポジトリへ継承されない。templateの
+`labels`指定が自動適用されるには、対象リポジトリに同名labelが必要である。AIは存在を確認し、
+存在しないlabelを付与済みとして報告しない。
+
 ## 更新手順
 
 1. 変更対象と成果をIssueで定義する。
