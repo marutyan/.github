@@ -1,3 +1,2 @@
-# Disable the free-form "blank issue" option so every issue starts from a
-# template. Trade-off: see docs/github-ops-reference.md (SSoT for this decision).
+# 問題の記録には共通テンプレートを使う。
 blank_issues_enabled: false
